@@ -4,9 +4,8 @@
   margin-top: $margin-top-body;
   margin-bottom: $margin-bottom-body;
   position: relative;
-  height: auto;
+  //height: 100vh;
 
-  
 
  
   
@@ -15,8 +14,8 @@
    
    width: 65%;
    @include respond(phone){
-    width: 100%;
-  }
+     width: 100%;
+   }
    &-interactive{
      width: 100%;
      display: inline-block;
@@ -31,43 +30,34 @@
   
 
   &-text{
-    
+   
     background-color:$color-white;
     padding-left: 6rem;padding-top: 5rem;
-    position: absolute;
+    position:absolute;
     bottom: 0;
     left: 50%;
 
      @include respond(phone){
-       padding: 0;
-       padding-top: 5rem;
-   position: absolute;
-   top: 100%;
-  left: 0%;
-
-   
-  }
+       position:static;
+    bottom: 0;
+    left: 50%;
+    padding: 1rem;
+    padding-top: 3rem;
+     }
 
     
   &-head{
 font-family: 'Alata', sans-serif;
 line-height: 1;
 margin-bottom: 1rem;
-@include respond(phone){
-        font-size: 4rem;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
+
 
   }
     &-body{
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 1rem;
+      font-size: 1.5rem;
 
-      @include respond(phone){
-        font-size: 2rem;
-        text-align: center;
-      }
+     
     }
    
    

@@ -1,0 +1,49 @@
+.section-creations{
+  margin-left: $margin-left-body;
+  margin-right: $margin-right-body;
+  display: flex;
+  justify-content: space-between;
+  
+@include respond(phone){
+      justify-content: center;
+    }
+  &-text{
+    font-family:'Alata', sans-serif ;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &-button{
+    font-size: 1.5rem;
+    border: 1px solid $color-black;
+    padding: 1rem 3rem;
+     
+    @include respond(phone){
+      display: none;
+    }
+    &:hover{
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+}
+
+.section-images{
+  margin-left:$margin-left-body;
+  margin-right: $margin-right-body;
+
+  margin-top: $margin-top-body;
+  overflow: hidden;
+  display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ 
+  &-div{
+ flex-basis: 25%;
+ padding: 1rem;
+  }
+  &-8{
+  
+   width: 100%;
+  }
+}
