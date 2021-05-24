@@ -50,7 +50,7 @@
 }
 .nav-left{
   font-size: 2.3rem;
-  font-weight: 500;
+  font-weight: 800;
 }
 .nav-right{
   font-size: 1.5rem;
@@ -63,7 +63,10 @@
 .ul-nav{
   display: flex;
   align-content: center;
-  
+  margin-top: .5rem;
+  @include respond(phone){
+
+  }
 }
 .nav-link{
   list-style: none;

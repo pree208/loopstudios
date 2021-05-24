@@ -14,15 +14,18 @@
     line-height: 1;
     top:35%;
     left: 0%;
+    font-family:'Josefin Sans', sans-serif ;
     font-size: 5rem;
-    font-weight: 300;
+    font-weight:100;
     text-transform: uppercase;
     border: 2px solid $color-white;
     padding: 3rem;
 
     @include respond(phone){
       font-size: 4rem;
-      padding: 1rem;
+      font-weight: 400;
+      padding: 2rem;
+      width: 80%;
     }
   }
 }
